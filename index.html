@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="flex flex-col items-center justify-center h-screen">
-    <nav class="p-4 w-full max-w-screen-xl">
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <nav class="fixed top-0  bg-white p-4 w-full max-w-screen-xl z-10 ">
         <div class="flex items-center justify-between mx-auto">
             <a href="#" class="flex items-center">
                 <img src="logo.png" alt="Logo" class="h-1/2 w-52 ml-8 mt-4">
@@ -30,15 +30,19 @@
             </div>
         </div>
     </nav>
-    <div class="text-center p-6 mt-14">
+    <div class="text-center p-6 mt-20">
         <div class="w-16 h-1 bg-orange-500 mx-auto mb-4"></div>
         <h1 class="text-3xl font-bold mb-4">We are coming soon</h1>
         <div class="max-w-md mx-auto text-center mb-6">
-            <p>Exciting changes are on the way! Our new website is launching soon. Stay tuned for updates and thank you for your patience!</p>
+            <p>Exciting changes are on the way! Our new website is launching soon. Stay tuned for updates and thank you
+                for your patience!</p>
         </div>
         <div class="flex justify-center mb-4">
-            <input type="email" placeholder="Enter your email" class="p-2 border w-80 border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-500">
-            <button class="bg-[#ff6341] text-white px-4 py-2 rounded-r-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">NOTIFY ME</button>
+            <input type="email" placeholder="Enter your email"
+                class="p-2 border w-80 border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <button
+                class="bg-[#ff6341] text-white px-4 py-2 rounded-r-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">NOTIFY
+                ME</button>
         </div>
         <div class="flex items-center justify-start mb-6">
             <input type="checkbox" id="notify-checkbox" class="ml-2">
@@ -71,9 +75,45 @@
                 <span class="text-orange-500 mr-2"><i class="fas fa-car"></i></span>
                 <span>Automotive</span>
             </div>
+            <div id="additional-items" class="hidden col-span-3 grid grid-cols-3 gap-4">
+                <div class="bg-gray-800 text-white px-6 py-4 rounded-md flex items-center justify-center">
+                    <span class="text-orange-500 mr-2"><i class="fa-solid fa-prescription-bottle-medical"></i></span>
+                    <span>Medicines</span>
+                </div>
+                <div class="bg-gray-800 text-white px-6 py-4 rounded-md flex items-center justify-center">
+                    <span class="text-orange-500 mr-2"><i class="fa-solid fa-laptop"></i></span>
+                    <span>Laptop</span>
+                </div>
+                <div class="bg-gray-800 text-white px-6 py-4 rounded-md flex items-center justify-center">
+                    <span class="text-orange-500 mr-2"><i class="fa-solid fa-headphones"></i></span>
+                    <span>Headphones</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="view-more-btn"
+                class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">Explore
+                More &gt;</button>
         </div>
     </div>
+    <footer class="w-full mt-8">
+        <div class="border-t border-gray-300 mt-8"></div>
+        <div class="text-center py-4 text-black">
+            <p>Afrikasouq Copyright © 2024</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('view-more-btn').addEventListener('click', function () {
+            const additionalItems = document.getElementById('additional-items');
+            if (additionalItems.classList.contains('hidden')) {
+                additionalItems.classList.remove('hidden');
+                this.textContent = 'View Less';
+            } else {
+                additionalItems.classList.add('hidden');
+                this.textContent = 'View More';
+            }
+        });
+    </script>
 </body>
-
 
 </html>

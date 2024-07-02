@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>Coming Soon Banner</title>
+    <!-- <link rel="stylesheet" href="./src/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2 class="font-extrabold bg-green-500">Comming Soon</h2>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="text-center p-6  ">
+        <div class="w-16 h-1 bg-orange-500 mx-auto mb-4"></div>
+        <h1 class="text-3xl font-bold mb-4">We are coming soon</h1>
+        <div class="max-w-md mx-auto text-center mb-6">
+            <p>Exciting changes are on the way! Our new website is launching soon. Stay tuned for updates and thank you for your patience!</p>
+        </div>
+        <div class="flex justify-center mb-4">
+            <input type="email" placeholder="Enter your email" class="p-2 border w-80 border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <button class="bg-[#ff6341] text-white px-4 py-2 rounded-r-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">NOTIFY ME</button>
+        </div>
+        <div class="flex items-center justify-start mb-6 ml-1">
+            <input type="checkbox" id="notify-checkbox" class="ml-1">
+            <label for="notify-checkbox" class="text-gray-700 ml-2">Get notified on the launch of AfrikaSouq.</label>
+        </div>
+       
+    </div>
 </body>
 </html>
+
+
+

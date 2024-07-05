@@ -1,45 +1,33 @@
-/*body {
-   background-image: url('/ComingSoon\ V3.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
-   
-}*/
-
 .checkbox-orange {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border-radius: 0.25em;
-    border: 2px solid #d1d5db; /* Light gray border */
-    background-color: white;
-    vertical-align: middle;
-    position: relative;
-    cursor: pointer;
-  }
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 2px solid #d1d5db;
+  background-color: white;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
 
- 
-  .checkbox-orange:checked {
-    background-color: #FF5733; 
-    border-color: #FF5733;
-  }
+.checkbox-orange:checked {
+  background-color: #FF5733;
+  border-color: #FF5733;
+}
 
-  
-  .checkbox-orange:checked::after {
-    content: '';
-    display: block;
-    width: 0.3em;
-    height: 0.5em;
-    border: 1px solid white;
-    border-width: 0 0.1em 0.1em 0;
-    transform: rotate(45deg) translate(-0.1em, -0.15em);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
+.checkbox-orange:checked::after {
+  content: '';
+  display: block;
+  width: 0.3em;
+  height: 0.5em;
+  border: 1px solid white;
+  border-width: 0 0.1em 0.1em 0;
+  transform: rotate(45deg) translate(-0.1em, -0.15em);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}

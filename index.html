@@ -1,273 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon Banner</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <style>
-      @media (max-width: 640px) {
-        .custom-input-full {
-          width: 100%;
-        }
 
-        .custom-notify-btn {
-          display: block;
-          width: 100%;
-          margin-top: 1rem;
-        }
-
-        /* .custom-categories {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-      } */
-        /* .custom-gradient {
-  background: linear-gradient(90deg, #111418 0%, #252B33 100%);
-} */
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon Banner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+  <style>
+    @media (max-width: 640px) {
+      .custom-input-full {
+        width: 100%;
       }
-    </style>
-  </head>
-  <body class=" " style="font-family: Onest" style="">
-    <div
-      class="flex flex-col items-center justify-center min-h-screen px-6 relative xl:h-[100%] w-[100%]"
-      style="font-family: Onest"
-    >
-      <!-- <div
-        class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat sm:hidden"
-        style="background-image: url('small.jfif')"
-      ></div> -->
-      <!-- <div
-        class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat hidden sm:flex lg:hidden bg-fixed"
-        style="background-image: url('medium.jfif')"
-      ></div> -->
-      <img
-        src="Coming Soon sm.png"
-        alt=""
-        class="absolute inset-0 background-size: cover; background-position: center; sm:hidden h-[100%] w-[100%]"
-      />
-      <img
-        src="Coming Soon md.png"
-        alt=""
-        class="absolute inset-0 background-size: cover; background-position: center; hidden sm:block min-[860px]:hidden lg:hidden h-[100%] w-[100%]"
-      />
-      <img
-        src="/ComingSoon V3.png"
-        alt=""
-        class="absolute inset-0 z-0 background-size: cover; background-position: center; hidden min-[860px]:flex min-[860px]:h-[100%] w-[100%]"
-      />
 
-      <nav class="z-10 top-0 p-4 w-full max-w-screen-xl">
-        <div
-          class="flex flex-col sm:flex-row items-center justify-between mx-auto"
-        >
-          <a href="#" class="flex items-center justify-center w-full sm:w-auto">
-            <img src="logo.png" alt="Logo" class="h-1/2 w-40 sm:w-52 mt-4" />
+      .custom-notify-btn {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class=" " style="font-family: Onest">
+  <div class="flex flex-col items-center justify-center min-h-screen px-6 relative xl:h-[100%] w-[100%]"
+    style="font-family: Onest">
+    <img src="Coming Soon sm.png" alt=""
+      class="absolute inset-0 background-size: cover; background-position: center; sm:hidden h-[100%] w-[100%]" />
+    <img src="Coming Soon md.png" alt=""
+      class="absolute inset-0 background-size: cover; background-position: center; hidden sm:block min-[860px]:hidden lg:hidden h-[100%] w-[100%]" />
+    <img src="/ComingSoon.png" alt=""
+      class="absolute inset-0 z-0 background-size: cover; background-position: center; hidden min-[860px]:flex min-[860px]:h-[100%] w-[100%]" />
+    <nav class="z-10 top-0 p-4 w-full max-w-screen-xl">
+      <div class="flex flex-col sm:flex-row items-center justify-between mx-auto">
+        <a href="#" class="flex items-center justify-center w-full sm:w-auto">
+          <img src="logo.png" alt="Logo" class="h-1/2 w-40 sm:w-52 mt-4" />
+        </a>
+        <div class="flex space-x-2 hidden sm:flex mt-4 sm:mt-0 sm:flex-row">
+          <h4 class="text-black text-base">Find Us On</h4>
+          <a href="https://www.linkedin.com/company/afrikasouq-com/" target="_blank">
+            <img src="/svg/Linkedin.svg" alt="" />
           </a>
-          <div class="flex space-x-2 hidden sm:flex mt-4 sm:mt-0 sm:flex-row">
-            <h4 class="text-black text-base">Find Us On</h4>
-            <a
-              href="https://www.linkedin.com/company/afrikasouq-com/"
-              target="_blank"
-            >
-              <img src="/svg/Linkedin.svg" alt="" />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61554690583632&mibextid=LQQJ4d"
-              target="_blank"
-            >
-              <img src="/svg/Facebook.svg" alt="" />
-            </a>
-            <a href="#" target="_blank">
-              <img src="/svg/Instagram.svg" alt="" />
-            </a>
-            <a href="https://x.com/Afrika_Souq" target="_blank">
-              <img src="/svg/Twitter.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </nav>
-      <div class="min-h-[75vh]">
-        <div class="relative text-center p-4 sm:p-6 mt-18">
-          <div class="w-16 h-1 bg-[#FF6341] mx-auto mb-4"></div>
-          <h1 class="text-3xl sm:text-4xl font-semibold mb-4">
-            We are coming soon
-          </h1>
-          <div
-            class="max-w-md mx-auto font-medium text-sm sm:text-md text-center mb-6 text-[#5D6A83]"
-          >
-            <p>
-              Exciting changes are on the way! Our new website is launching
-              soon. Stay tuned for updates and thank you for your patience!
-            </p>
-          </div>
-          <div class="relative flex flex-col sm:flex-row justify-center mb-4">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="custom-input-full p-2 placeholder:text-gray-500 placeholder:font-medium py-3 text-sm border sm:w-80 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
-            />
-            <button
-              class="custom-notify-btn hidden sm:flex bg-[#FF6341] text-white font-bold px-5 py-3 rounded-r-md sm:rounded-none sm:rounded-r-md hover:bg-[#fd5b36] focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              NOTIFY ME
-            </button>
-          </div>
-          <div class="relative flex items-center justify-start w-full  md:mb-2 lg:mb-2 md:ml-28 lg:ml-28">
-            <input
-              type="checkbox"
-              id="notify-checkbox"
-              class="custom-checkbox text-white checkbox-orange  "
-            />
-            <label
-              for="notify-checkbox"
-              class="text-[#344054]  text-[12px] ml-2 min-[415px]:text-sm font-semibold  "
-              >Get notified on the launch of AfrikaSouq.</label
-            >
-          </div>
-          <div class="mt-7">
-
-            <button
-              class="custom-notify-btn sm:hidden bg-[#FF6341] text-white font-bold px-5 py-3 rounded-full sm:rounded-none sm:rounded-r-md hover:bg-[#fd5b36] focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              NOTIFY ME
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="relative  h-auto w-full max-w-screen-md py-7 px-3 sm:p-8 sm:m-4 rounded-3xl  sm:mt-10"
-          style="background: linear-gradient(35.76deg, #111418 -5.92%, #252B33 98.52%);
-          border-radius: 35px;"
-        >
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-            <div
-              class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] ml-3 sm:mr-3"
-                ><img src="/svg/Shirt.svg" alt=""
-              /></span>
-              <span class="ml-3 sm:ml-0">Fashion & Beauty</span>
-            </div>
-            <div
-              class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] ml-3 sm:mr-3"
-                ><img src="/svg/House.svg" alt=""
-              /></span>
-              <span class="ml-3 sm:ml-0">Real Estate</span>
-            </div>
-            <div
-              class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] ml-3 sm:mr-3"
-                ><img src="/svg/Mobile.svg" alt=""
-              /></span>
-              <span class="ml-3 sm:ml-0">Mobiles</span>
-            </div>
-            <div
-              class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] mr-3"
-                ><img src="/svg/Weight.svg" alt=""
-              /></span>
-              <span>Beauty & Wellness</span>
-            </div>
-            <div
-              class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] mr-2"
-                ><img src="/svg/Television.svg" alt=""
-              /></span>
-              <span>Appliances</span>
-            </div>
-            <div
-              class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
-              style="background: rgba(255, 255, 255, 0.05);
-              backdrop-filter: blur(30px);
-              box-sizing: border-box;
-              border-radius: 15px;"
-            >
-              <span class="text-[#ff5733] mr-3"
-                ><img src="/svg/Steering.svg" alt=""
-              /></span>
-              <span>Automotive</span>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <button
-              id="view-more-btn"
-              class="px-4 mt-4 rounded-m text-[#FF6341] font-bold"
-            >
-              & MANY MORE
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center relative sm:hidden">
-        <div class="flex space-x-2 mt-5">
-          <h4 class="text-black text-xs mt-1 font-medium">Find Us On</h4>
-          <a
-            href="https://www.linkedin.com/company/afrikasouq-com/"
-            target="_blank"
-          >
-            <img src="/svg/Linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61554690583632&mibextid=LQQJ4d"
-            target="_blank"
-          >
-            <img src="/svg/Facebook.svg" alt="Facebook" class="h-6 w-6" />
+          <a href="https://www.facebook.com/profile.php?id=61554690583632&mibextid=LQQJ4d" target="_blank">
+            <img src="/svg/Facebook.svg" alt="" />
           </a>
           <a href="#" target="_blank">
-            <img src="/svg/Instagram.svg" alt="Instagram" class="h-6 w-6" />
+            <img src="/svg/Instagram.svg" alt="" />
           </a>
           <a href="https://x.com/Afrika_Souq" target="_blank">
-            <img src="/svg/Twitter.svg" alt="Twitter" class="h-6 w-6" />
+            <img src="/svg/Twitter.svg" alt="" />
           </a>
         </div>
       </div>
-      <footer class="relative w-full mt-8">
-        <div class="border-t border-gray-300 mt-8"></div>
-        <div class="text-center py-7 text-black text-sm">
-          <p>Afrikasouq Copyright © 2024</p>
+    </nav>
+    <div class="min-h-[75vh]">
+      <div class="relative text-center p-4 sm:p-6 mt-18">
+        <div class="w-16 h-1 bg-[#FF6341] mx-auto mb-4"></div>
+        <h1 class="text-3xl sm:text-4xl font-semibold mb-4">
+          We are coming soon
+        </h1>
+        <div class="max-w-md mx-auto font-medium text-sm sm:text-md text-center mb-6 text-[#5D6A83]">
+          <p>
+            Exciting changes are on the way! Our new website is launching
+            soon. Stay tuned for updates and thank you for your patience!
+          </p>
         </div>
-      </footer>
+        <div class="relative flex flex-col sm:flex-row justify-center mb-4">
+          <input type="email" placeholder="Enter your email"
+            class="custom-input-full p-2 placeholder:text-gray-500 placeholder:font-medium py-3 text-sm border sm:w-80 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          <button
+            class="custom-notify-btn hidden sm:flex bg-[#FF6341] text-white font-bold px-5 py-3 rounded-r-md sm:rounded-none sm:rounded-r-md hover:bg-[#fd5b36] focus:outline-none focus:ring-2 focus:ring-orange-500">
+            NOTIFY ME
+          </button>
+        </div>
+        <div class="relative flex items-center justify-start w-full  md:mb-2 lg:mb-2 md:pl-28 lg:pl-28">
+          <input type="checkbox" id="notify-checkbox" class="custom-checkbox text-white checkbox-orange  " />
+          <label for="notify-checkbox" class="text-[#344054]  text-[12px] ml-2 min-[415px]:text-sm font-semibold  ">Get
+            notified on the launch of AfrikaSouq.</label>
+        </div>
+        <div class="mt-7">
+          <button
+            class="custom-notify-btn sm:hidden bg-[#FF6341] text-white font-bold px-5 py-3 rounded-full sm:rounded-none sm:rounded-r-md hover:bg-[#fd5b36] focus:outline-none focus:ring-2 focus:ring-orange-500">
+            NOTIFY ME
+          </button>
+        </div>
+      </div>
+      <div class="relative  h-auto w-full max-w-screen-md py-7 px-3 sm:p-8 sm:m-4 rounded-3xl  sm:mt-10" style="background: linear-gradient(35.76deg, #111418 -5.92%, #252B33 98.52%);
+          border-radius: 35px;">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+          <div
+            class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] ml-3 sm:mr-3"><img src="/svg/Shirt.svg" alt="" /></span>
+            <span class="ml-3 sm:ml-0">Fashion & Beauty</span>
+          </div>
+          <div
+            class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] ml-3 sm:mr-3"><img src="/svg/House.svg" alt="" /></span>
+            <span class="ml-3 sm:ml-0">Real Estate</span>
+          </div>
+          <div
+            class=" text-md border-[1px] border-gray-600 text-white sm:h-[74px] h-[65px] rounded-2xl flex items-center sm:justify-center justify-start p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] ml-3 sm:mr-3"><img src="/svg/Mobile.svg" alt="" /></span>
+            <span class="ml-3 sm:ml-0">Mobiles</span>
+          </div>
+          <div
+            class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] mr-3"><img src="/svg/Weight.svg" alt="" /></span>
+            <span>Beauty & Wellness</span>
+          </div>
+          <div
+            class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] mr-2"><img src="/svg/Television.svg" alt="" /></span>
+            <span>Appliances</span>
+          </div>
+          <div
+            class=" hidden sm:flex text-md border-[1px] border-gray-600 text-white h-[74px] rounded-2xl flex items-center justify-center p-2 sm:p-3 mx-1 sm:mx-0"
+            style="background: rgba(255, 255, 255, 0.05);
+              backdrop-filter: blur(30px);
+              box-sizing: border-box;
+              border-radius: 15px;">
+            <span class="text-[#ff5733] mr-3"><img src="/svg/Steering.svg" alt="" /></span>
+            <span>Automotive</span>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button id="view-more-btn" class="px-4 mt-4 rounded-m text-[#FF6341] font-bold">
+            & MANY MORE
+          </button>
+        </div>
+      </div>
     </div>
-  </body>
+    <div class="flex justify-center relative sm:hidden">
+      <div class="flex space-x-2 mt-5">
+        <h4 class="text-black text-xs mt-1 font-medium">Find Us On</h4>
+        <a href="https://www.linkedin.com/company/afrikasouq-com/" target="_blank">
+          <img src="/svg/Linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61554690583632&mibextid=LQQJ4d" target="_blank">
+          <img src="/svg/Facebook.svg" alt="Facebook" class="h-6 w-6" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="/svg/Instagram.svg" alt="Instagram" class="h-6 w-6" />
+        </a>
+        <a href="https://x.com/Afrika_Souq" target="_blank">
+          <img src="/svg/Twitter.svg" alt="Twitter" class="h-6 w-6" />
+        </a>
+      </div>
+    </div>
+    <footer class="relative w-full mt-8">
+      <div class="border-t border-gray-300 mt-8"></div>
+      <div class="text-center py-7 text-black text-sm">
+        <p>Afrikasouq Copyright © 2024</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

@@ -47,28 +47,28 @@
       class="flex flex-col items-center justify-center min-h-screen px-6 relative"
       style="font-family: Onest"
     >
-      <div
+      <!-- <div
         class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat sm:hidden"
         style="background-image: url('small.jfif')"
-      ></div>
-      <div
+      ></div> -->
+      <!-- <div
         class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat hidden sm:flex lg:hidden bg-fixed"
         style="background-image: url('medium.jfif')"
-      ></div>
-      <!-- <img
+      ></div> -->
+      <img
         src="small.jfif"
         alt=""
-        class="absolute background-size: cover; background-position: center; sm:hidden"
-      /> -->
-      <!-- <img
+        class="absolute inset-0 background-size: cover; background-position: center; sm:hidden h-[100%] w-[100%] "
+      />
+      <img
         src="medium.jfif"
         alt=""
-        class="absolute background-size: cover; background-position: center; hidden sm:block lg:hidden"
-      /> -->
+        class="absolute inset-0 background-size: cover; background-position: center; hidden sm:block min-[860px]:hidden lg:hidden h-[100%] w-[100%]"
+      />
       <img
         src="/ComingSoon V3.png"
         alt=""
-        class="absolute  z-0 background-size: cover; background-position: center; hidden lg:flex"
+        class="absolute inset-0 z-0 background-size: cover; background-position: center; hidden min-[860px]:flex min-[860px]:h-[100%] w-[100%] " 
       />
 
       <nav class="z-10 top-0 p-4 w-full max-w-screen-xl">
@@ -234,7 +234,7 @@
       </div>
       <footer class="relative w-full mt-8">
         <div class="border-t border-gray-300 mt-8"></div>
-        <div class="text-center sm:py-2 py-4 text-black text-sm">
+        <div class="text-center  py-7 text-black text-sm">
           <p>Afrikasouq Copyright © 2024</p>
         </div>
       </footer>
